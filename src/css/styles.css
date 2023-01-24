@@ -14,7 +14,12 @@ body {
 
 #search-box {
   font: inherit;
+  margin-top: 80px;
+  margin-left: 100px;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border-radius: 8px;
+  border: solid 2px;
+  font-weight: 600;
 }

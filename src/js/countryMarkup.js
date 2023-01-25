@@ -8,7 +8,7 @@ export function countryMarkup(countryData) {
       // кожен об'єкт отриманий у масиві, який ми ДЕСТРУКТУРИЗУЄМО взявши в такі дужки {}.
       return `
   <div class="country__container">
-  <img class="country__flag" src="${flags.svg}" alt="flag" width="250px">
+  <img class="country__flag" src="${flags.svg}" alt="flag" width="300px">
   <p class="country__name">${name.official}</p>
   </div>
    <ul class="country__description">

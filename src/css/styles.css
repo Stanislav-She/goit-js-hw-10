@@ -12,10 +12,21 @@ body {
   line-height: 1.5;
 }
 
+.country__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fafafa;
+  font-weight: 700;
+}
+
 #search__box {
   display: flex;
   font: inherit;
-  margin-top: 100px;
+  font-weight: 600;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   padding: 8px;
@@ -23,7 +34,7 @@ body {
   margin-bottom: 16px;
   border-radius: 8px;
   border: solid 2px;
-  font-weight: 600;
+  box-shadow: 4px 4px 150px 130px #4d4c4c;
 }
 
 .cards__item {
@@ -46,18 +57,18 @@ body {
   display: flex;
   align-items: center;
   gap: 25px;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 25px;
   margin-left: 50px;
 }
 
 .country__flag {
-  box-shadow: 4px 4px 1000px 440px rgba(35, 168, 2, 0.34);
+  box-shadow: 4px 4px 1000px 300px rgba(35, 168, 2, 0.34);
 }
 
 .country__name {
   font-weight: 900;
-  font-size: 55px;
+  font-size: 57px;
 }
 
 .country__description {

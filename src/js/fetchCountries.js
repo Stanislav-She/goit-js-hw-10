@@ -2,7 +2,7 @@ export const BASE_URL = 'https://restcountries.com/v3.1/name';
 
 export const fetchCountries = url => {
   return fetch(
-    `${BASE_URL}/${url}?fields=name,capital,population,flags,languages`
+    `${BASE_URL}/${url}?fields=name,capital,population,flags,languages,region`
   ).then(response => {
     if (!response.ok) {
       throw new Error('no data loaded!');
@@ -17,7 +17,7 @@ export const fetchCountries = url => {
 //   // створюємо функцію fetchCountries, яка робить HTTP-запит на ресурс
 //   // і повертає проміс з масивом країн - результатом запиту
 //   return fetch(
-//     `${BASE_URL}/${url}?fields=name,capital,population,flags,languages`
+//     `${BASE_URL}/${url}?fields=name,capital,population,flags,languages,region`
 //     // використовуємо змінну BASE_URL і додаємо відповідно до документації даної API
 //     // потрібні нам із ТЗ поля
 //   ).then(response => {

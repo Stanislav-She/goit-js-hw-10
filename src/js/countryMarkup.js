@@ -1,6 +1,6 @@
 export function countryMarkup(countryData) {
   return countryData
-    .map(({ flags, name, capital, population, languages }) => {
+    .map(({ flags, name, capital, population, languages, region }) => {
       return `
   <div class="country__container">
   <img class="country__flag" src="${flags.svg}" alt="flag" width="300px">
@@ -16,6 +16,9 @@ export function countryMarkup(countryData) {
    <li class="country__item">&#128172 Languages:
   <span class="country__span">${Object.values(languages).join(', ')}</span>
   </li>
+   <li class="country__item">&#127758 Region:
+  <span class="country__span">${region}</span>
+  </li>
   </ul>`;
     })
     .join('');
@@ -26,7 +29,7 @@ export function countryMarkup(countryData) {
 //   // із об'єктом даних про країну, яка повернута за запитом із API, у вигляді ключів
 //   // та значень
 //   return countryData
-//     .map(({ flags, name, capital, population, languages }) => {
+//     .map(({ flags, name, capital, population, languages, region }) => {
 //       // Метод map() використовуємо для трансформації масиву, а саме перебираємо
 //       // кожен об'єкт отриманий у масиві, який ми ДЕСТРУКТУРИЗУЄМО взявши в такі дужки {}.
 //       return `
@@ -44,6 +47,9 @@ export function countryMarkup(countryData) {
 //    <li class="country__item">&#128172 Languages:
 //   <span class="country__span">${Object.values(languages).join(', ')}</span>
 //   </li>
+//  <li class="country__item">&#127758 Region:
+//   <span class="country__span">${region}</span>
+//  </li>
 //   </ul>`;
 //       // повертаємо такий рядок із розміткою, де підставляються значення з отриманих ключів
 //     })
